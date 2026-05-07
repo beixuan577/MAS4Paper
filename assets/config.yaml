@@ -1,0 +1,45 @@
+# MAS4Paper 配置文件示例
+
+# 研究领域设置
+research:
+  field: "劳动经济学"
+  keywords:
+    - "人工智能"
+    - "就业"
+    - "技能溢价"
+  
+# 目标期刊
+journal:
+  name: "经济研究"
+  format: "chinese_core"  # chinese_core, international_top
+  
+# 数据设置
+data:
+  sources:
+    - "CHFS"
+    - "CFPS"
+  time_range:
+    start: 2010
+    end: 2022
+    
+# 智能体配置
+agents:
+  agent1_selection:
+    model: "claude-3-opus"
+    temperature: 0.7
+    
+  agent4_analysis:
+    model: "claude-3-sonnet"
+    temperature: 0.3
+    
+# 输出设置
+output:
+  language: "chinese"  # chinese, english
+  figure_format: "png"
+  table_format: "latex"
+  
+# 可复现性设置
+reproducibility:
+  seed: 42
+  log_level: "INFO"
+  save_intermediate: true
